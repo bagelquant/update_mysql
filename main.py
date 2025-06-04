@@ -99,11 +99,23 @@ def main() -> None:
     with open("update_apis.json", encoding="utf-8") as f:
         apis = json.load(f)
 
-    yearly_update(apis)
-    monthly_update(apis)
-    daily_update(apis)
-
-    create_indexes(apis)
+    # User input to choose update type: 1 for daily, 2 for monthly, 3 for yearly, 0 for create indexes
+    update_type = input("Choose update type:\n1. Daily\n2. Monthly\n3. Yearly\n0. Create Indexes\nEnter your choice: ")
+    if update_type == "1":
+        print("Updating daily data...")
+        daily_update(apis)
+    elif update_type == "2":
+        print("Updating monthly data...")
+        monthly_update(apis)
+    elif update_type == "3":
+        print("Updating yearly data...")
+        yearly_update(apis)
+    elif update_type == "0":
+        print("Creating indexes...")
+        create_indexes(apis)
+    else:
+        print("Invalid choice. Exiting.")
+        return
 
 
 if __name__ == "__main__":

@@ -1,4 +1,3 @@
-update_mysql/update_mysql.md
 # update_mysql Documentation
 
 ## Overview
@@ -132,7 +131,3 @@ Enter your choice:
 
 **Do not commit your database password or Tushare token to public repositories.**  
 Consider using environment variables or a separate configuration file for sensitive information.
-
----
-
-For further customization or troubleshooting, refer to the source code in `main.py`.

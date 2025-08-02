@@ -3,7 +3,7 @@ Update Tushare data to MySQL database.
 """
 import json
 from bageltushare import download, update_by_code, update_by_date
-from bageltushare import create_index, create_log_table, get_engine
+from bageltushare import create_index, create_all_tables, get_engine
 from time import perf_counter
 
 
@@ -95,7 +95,7 @@ def create_indexes(apis: dict) -> None:
 
 def main() -> None:
     """main function"""
-    create_log_table(ENGINE)
+    create_all_tables(ENGINE)
     with open("update_apis.json", encoding="utf-8") as f:
         apis = json.load(f)
 

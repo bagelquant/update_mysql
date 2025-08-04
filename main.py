@@ -15,7 +15,7 @@ PASSWORD = "Hyz.js180518"
 DB = "tushare"
 
 ENGINE = get_engine(HOST, PORT, USER, PASSWORD, DB)
-TOKEN = "f7ad1328a17b49b5b7d126cb3ef4ae00565cba3adc28eeeecabbeb78"
+TOKEN = "4f3059398b2c5fdb1b8d686be52cc6e7cb9bf4d61f75308821889c2f"
 
 
 def yearly_update(apis: dict) -> None:

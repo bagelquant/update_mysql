@@ -44,7 +44,8 @@
     "monthly": {
         "balancesheet": {},
         "cashflow": {},
-        "income": {}
+        "income": {},
+        "fina_indicator": {}
     },
 
     "daily": {
